@@ -1,9 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     font-family: 'Manrope', sans-serif;
     background-color: #FFF;
     font-weight: 400;
 }
+
+.nav-section {
+    margin-bottom: 73px;
+    margin-top: 33px;
+    min-width: 1180px;
+}
+
+.nav__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+    width: 126px;
+    height: 21px;
+}
+
+.nav {
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+
+
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 60px;
+
+    font-size: 18px;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#121212;
+}
+.nav-link:nth-child(1){
+    width: 54px;
+    height: 25px;
+    opacity: 0.5;
+   text-decoration: underline;
+   margin-left: 537px;
+
+}
+.nav-link:nth-child(2){
+    width: 79px;
+    height: 25px;
+}
+.nav-link:nth-child(3){
+    width: 66px;
+    height: 25px;
+}
+.nav-link:nth-child(4){
+    width: 90px;
+    height: 25px;
+}
+
+
+
 
 .hero {
     margin-bottom: 150px;
@@ -85,9 +152,11 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 .projects {
     margin-bottom: 150px;
 }
+
 .projects__list {
     margin-bottom: 90px;
 
@@ -153,7 +222,6 @@ body {
 
 .services__title {
     color: #fff;
-    /* padding-top: 150px;; */
 
 }
 
@@ -188,15 +256,23 @@ body {
 .services__list:last-child {
     margin-bottom: 0;
 }
+.bedroom {
+    margin-bottom: 100px;
+}
 .frame {
-    max-width:1430px;
-    padding:0px 15px;
+    width: 1480px;
+    /* padding: 0px 15px; */
     margin: 0 auto;
 }
+
 .bedroom__box {
-    background-image: url(../resources/bedroom.jpg);
-    height: 717px;
     position: relative;
+    height: 717px;
+    margin-bottom: 30px;
+    background-image: url(../resources/bedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .bedroom__text {
@@ -205,10 +281,10 @@ body {
     left: 125px;
     bottom: 60px;
     font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.9px;
-        width:443px;
-        color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    width: 443px;
+    color: #fff;
 }
