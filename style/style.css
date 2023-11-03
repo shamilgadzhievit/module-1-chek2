@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     width: 100%;
     font-family: 'Manrope', sans-serif;
@@ -9,15 +10,9 @@ body {
 }
 
 .nav-section {
-    margin-bottom: 73px;
     margin-top: 33px;
+    margin-bottom: 73px;
     min-width: 1180px;
-}
-
-.nav__container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .logo-link {
@@ -31,45 +26,25 @@ body {
 }
 
 .nav {
-    display: inline-block;
-    margin-top: 3px;
-    vertical-align: top;
-
+    float: right;
 
 }
 
-.nav-link {
+.nav__link {
     display: inline-block;
     margin-left: 60px;
-
+    color: #121212;
     font-size: 18px;
+    line-height: 26px;
     letter-spacing: -0.54px;
     text-transform: uppercase;
     text-decoration: none;
-    color:#121212;
 }
-.nav-link:nth-child(1){
-    width: 54px;
-    height: 25px;
+
+.nav__link:hover {
     opacity: 0.5;
-   text-decoration: underline;
-   margin-left: 537px;
-
+    border-bottom: 1px solid black;
 }
-.nav-link:nth-child(2){
-    width: 79px;
-    height: 25px;
-}
-.nav-link:nth-child(3){
-    width: 66px;
-    height: 25px;
-}
-.nav-link:nth-child(4){
-    width: 90px;
-    height: 25px;
-}
-
-
 
 
 .hero {
@@ -256,35 +231,121 @@ body {
 .services__list:last-child {
     margin-bottom: 0;
 }
-.bedroom {
-    margin-bottom: 100px;
-}
-.frame {
-    width: 1480px;
-    /* padding: 0px 15px; */
-    margin: 0 auto;
-}
 
-.bedroom__box {
-    position: relative;
+
+.interior {
+    width: 100%;
     height: 717px;
-    margin-bottom: 30px;
-    background-image: url(../resources/bedroom.jpg);
+    margin-bottom: 150px;
+
+    background-image: url('../resources/bedroom.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+
 }
 
-.bedroom__text {
+.interior__text {
+    width: 443px;
+    padding-top: 572px;
 
-    position: absolute;
-    left: 125px;
-    bottom: 60px;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.9px;
-    width: 443px;
+    color: #FFF;
+
+}
+
+.contact {
+    margin-bottom: 150px;
+}
+
+.contact__title {
+    position: relative;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+}
+
+.contact__title::before {
+
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -35px;
+
+    background-image: url('../resources/iphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.contact__item a {
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.8px;
+    color: #121212;
+
+}
+
+
+.contact__item_color {
+    opacity: 0.5;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    margin-top: 30px;
+    line-height: 61px;
+
+}
+
+.footer {
+    height: 229px;
+    background-color: #121212;
+}
+
+.footer__list {
+    width: 550px;
+    margin: 0 auto;
+
+}
+
+.footer__item {
+    margin-top: 60px;
+    margin-right: 53px;
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
     color: #fff;
+}
+
+.footer__item:nth-child(1) {
+    opacity: 0.5;
+}
+
+.footer__item:nth-child() {
+    margin-right: 0;
+
+}
+
+.footer__title {
+    color: #FFF;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 87px;
+
+
 }
